@@ -5,7 +5,7 @@ import Input from "../components/Input";
 const Auth = () => {
     const [email, setEmail] = useState('');
     const [name, setName] = useState(''); 
-    const [password,setPassword] = useState('');
+    const [password, setPassword] = useState('');
     
     return( 
         // <div style={{ backgroundImage: url(${/images/hero.jpg}) }} 
@@ -35,7 +35,7 @@ const Auth = () => {
                                 value={email}
                                 />
                               <Input
-                                label="password"
+                                label="Password"
                                 onChange={(ev: any) => setPassword(ev.target.value)}
                                 id = "password"
                                 type="password"
