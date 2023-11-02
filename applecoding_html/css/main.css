@@ -43,6 +43,8 @@
    height:400px;
    background :cornflowerblue;
    /* float: left; */
+   display: inline-block;
+   vertical-align: top;
  }
 
  .right{
@@ -50,6 +52,8 @@
    height: 400px;
    background: coral;
    /* float: left; */
+   display: inline-block;
+
 }
 
 .footer{

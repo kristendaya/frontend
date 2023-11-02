@@ -121,3 +121,43 @@ float다음에는 clear 쓰는게좋음
 레이아웃은 가로배치라고 생각하며~ 
 
 <05강>
+display:black(한행을 전부차지)
+display:inline-block(내크기만큼 차지) (어울림설정임))
+근데 특징이 있음 
+ <div class="left-menu"></div><div class="right"></div>
+ 이렇게 디브를 바짝붙여야함(박스사이 공백제거 필수)
+ 이 두 디브의 공백은 스페이스 만큼! 
+ <div class="container"></div>
+   <div class="header"> </div>
+   <div class="left-menu"></div><div class="right"></div>
+   <div class="footer"></div>
+      </body>
+
+ 즉 이렇게 써야되는데 이러면 div 끼리 붙어있어서 넘 헷갈리잖음?
+ 그래서~ 
+ inline-block사용시 공백제거방법
+ 1.박스사이에 주석처리를 넣기
+  <div class="container"></div>
+   <div class="header"> </div>
+   <div class="left-menu"></div> <--
+   --> <div class="right"></div>
+   <div class="footer"></div>
+
+ 2.부모태그에 font-size:0px;
+ <div class="container" style="font-size:0px">
+   <div class="header"> </div>
+   <div class="left-menu" style="font-size20px"></div>
+   <div class="right"></div>
+   <div class="footer"></div>
+   </div>
+   근데 그러면 부모가 0이 되니까 글씨 써도 안보일거아님?
+   그래서 결국 따로 또 주고 싶은 박스에다가 style로 fontsize 넣어줘야함
+   
+   근데 해보면알겠지만, 글씨 넣으면 박스가 움직임.
+   그래서 박스가 밀림. 이런걸 해결하기위해서 
+   vertical-align: top;
+
+   이걸로 해결을함. 
+   그러면 이 에러는 왜나느냐??
+   글자는 baseline이 있음. 그 베이스라인이 시작되는 부분이 앞부분이여서 그런거임.
+   따러서 inline-block 자기크기만큼 자리를 차지하기 
