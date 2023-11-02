@@ -1,0 +1,104 @@
+<01강>
+웹페이지를 만들때 HTML (markup언어) 
+그림은 여기로 넣어주고 글은 여기로 넣어주세요 이거임
+주로 메인페이지는 index.html임
+
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>>Document</title>
+      </head>
+      <body>
+         <h1 id="hello">안녕</h1>
+      </body>
+
+   </head>
+</html>
+
+이게 기본임
+
+<02강>
+글은 <p></p> 에 적어야함
+p는 paragraph의 약자임
+글제목은 <h1> heading
+html은 자료가 어디에 배치되어있나 표현하기 위한 언어이기 때문.
+<h>쓰면 아 이게 제목이구나
+<p>쓰면 이게 본문이구나 알수있으니까!
+<img src="이밎경로"> 얘는 끝나는 태그없음
+<button></button>
+<a href="https://google.com"> 링크임 </a>
+
+<<리스트만들때>>
+<ul> 
+   <li>  항목1 </li>
+   <li> 항목2 </li>
+</ul>
+
+unordered list ->ul
+list item -> li
+
+번호쓰고싶으면 <ul> 대신 <ol> 쓰면됨
+쟤네는 한세트임
+ordedred list
+
+이미지 누르면 구글로 이동하게 하는 방법
+<a href="www.google.com">
+   <img src="apple.jpg">
+</a>
+
+<p> 안녕하세요 이동하기 </p>
+에서 이동하기 누르면 이동하는것
+<p>안녕하세요 <a href="www.google.com"> 이동하기 </a></p>
+
+<03강> 
+03 <HTML>꾸미는법
+style 넣으면 다 꾸밀수있음
+<가운데정렬하는방법>
+display: block;
+margin-left:auto;
+margin-right: auto;
+
+글자 스타일링방법
+사이즈는 <font-size:16px></font-size:16px>
+px 뿐만아니라, vw ->이건화면비율에 맞춰서 / %->부모사이즈에 비례 감싸고있는태그
+font-family :'gulim'
+자간조절letter-spacing:1px; (자간조절)
+글자정렬 text-align:center;
+
+Q.<p>태그안에 글자의 일부부만 색상을 바꾸고 싶으면 어떻게해야함?
+   <span></span> 태그 쓰면됨.글자를 감쌀수 있는 별뜻없는 태그임
+   <p><span style="color:red"> blah </spsan> </p>
+글자굵게 하는방법
+font-weight: 100~900
+<strong></storng>
+
+<04강> CSS사용
+Style이 너무 길면 CSS로 뺀다.
+Css파일에 스타일을 보관한다고 생각해라.
+1.<link>로 css 파일연결
+2.css파일에 style작성후 작명
+3.thml파일에서 작명한거 사용! class= ~ 
+class는 스타일을 묶는 단위
+class는 점찍고 작명한다.
+이름중복은 피한다.
+
+class말고 다르게 넣는법
+p{} 클래스명을 쓰는게아니라 태그명을 써도됨.
+이러면 모든 p태그의 스타일. 기본 스타일을 저장하고싶을때마다 쓰면됨~ 
+
+#speacial {}
+그러면 id=speacial 이렇게도 쓸수있음
+그런데 html에서 이방법 잘안씀 왜냐? JS때문에 
+그냥 이런게 있다 정도로만 알고 넘어갈것
+
+CSS selector라고 부름 
+class selector
+
+css는 스타일이 겹칠경우 우선순위따라 정해짐
+class 10, tag 1, id 100점~ 
+style은 천점! 직접 지정하는거니까~ 
+Css = Cascading Style sheet 
+스타일 보관파일임.
+
+<04강>
+div 

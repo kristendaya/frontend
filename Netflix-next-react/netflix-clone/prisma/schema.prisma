@@ -71,4 +71,4 @@ model Movie{
   genre String
   rating Int
   duration String
-}
+} 
