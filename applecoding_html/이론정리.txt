@@ -102,3 +102,22 @@ Css = Cascading Style sheet
 
 <04강>
 div 
+padding : 내부여백 안쪽여백  상하좌우 안쪽여백 margin 상하좌우여백
+border :테두리
+radius: 둥글게
+
+<div><p><h>의 특징 display: block을 기본으로 갖고있음 block이 뭔데? 가로를 다 차지하는것! 
+
+<04강> flaot이용한 레이아웃 만들기
+일반적이 웹사이트 만들텐데, 이럴때는 감싸는 박스를 만들어주면 편하다. 약간 네이버 블로그 큰틀있는거마냥~ 
+wrapper이나 container라고 한다.
+고로 .contianer 부터 만들고 시작. 이때 width같은걸 미리 지정해주는게 좋음. 큰틀이니까~ 
+처음에 div만들어도 안보일거임. 왜냐 div는 선임 선! 
+박스배치할때는 float를 써야함 
+
+float애들은 공중에 떠있는거임. 그래서 footer를 그냥붙이면 위에 올라가있음.
+이때 clear:both르ㅡㄹ 주면 현상해결
+float다음에는 clear 쓰는게좋음
+레이아웃은 가로배치라고 생각하며~ 
+
+<05강>

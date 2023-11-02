@@ -14,5 +14,48 @@
 }
 
 .box{
-    width:100px;ß
+    width:100px;
+    background-color : cadetblue;
+    margin-top: 30px;
+    padding: 40px;
+    /* padding : 내부여백 안쪽여백  상하좌우 안쪽여백 margin 상하좌우여백 */
+    border-radius: 5px ;
+    /* display: block;  상자는 이미 block을 기본을 갖고있음. p,h block 가로행을 전부 차지해주셈.*/
+    margin-left:auto;
+    margin-right: auto;
+    font-size : 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 5px black;
+ }
+
+ .container {
+   width: 800px;
+ }
+
+ .header{
+   width:100%;
+   height:50px;
+   background: aquamarine;
+ }
+
+ .left-menu{
+   width:20%;
+   height:400px;
+   background :cornflowerblue;
+   /* float: left; */
+ }
+
+ .right{
+   width:80%;
+   height: 400px;
+   background: coral;
+   /* float: left; */
+}
+
+.footer{
+   width:100%;
+   height:100px;
+   background-color:grey;
+   /* clear:both; */
+
 }
