@@ -63,3 +63,63 @@
    /* clear:both; */
 
 }
+
+.blogboxbg{
+   width: 800px;
+   height: 320px;
+   /* background: black  ; */
+   margin-left:auto;
+   margin-right:auto;
+}
+.innerbigbox{
+   width: 80%;
+   height: 100%;
+   background: #eee;
+   float:left;
+}
+
+.title{
+   width: 95%;
+   height: 20%;
+   /* background: yellow; */
+   margin:5px 5px 5px 5px;
+}
+
+.bonmoon{
+   width: 95%;
+   height: 75%;
+   /* background: rgb(215, 209, 214); */
+   margin:5px 5px 5px 5px;
+}
+
+.image-box{
+   width:20%;
+   height:200px;
+   background: pink;
+   float: left;
+   margin-top:60px;
+}
+
+.blog-profile{
+   width:30px;
+   display:block;
+   float:left;
+}
+
+.blogname{
+   width:50px;
+   float:left;
+}
+
+.navbar li{
+   display:inline-block;
+   width:60px;
+   text-align: center;
+   background:#eee;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.navbar a{
+   font-size: 16px;
+   text-decoration:none}

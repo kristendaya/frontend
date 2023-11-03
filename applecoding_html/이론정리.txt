@@ -161,3 +161,21 @@ display:inline-block(내크기만큼 차지) (어울림설정임))
    그러면 이 에러는 왜나느냐??
    글자는 baseline이 있음. 그 베이스라인이 시작되는 부분이 앞부분이여서 그런거임.
    따러서 inline-block 자기크기만큼 자리를 차지하기 
+   
+   <6강>css selector
+   flaot이슈 때문에 clear 넣어주는데. 뭔가 박스가 안이쁘거나 그럴수있음
+   그러면 위에 그냥 가상의 박스를 만들어주는거임
+
+   <selection>:섹션을 포현하고싶을때 <footer> 
+
+   Selector 문법특징 : 공백이 있다는것은
+   ~안에 있다는것.
+   .navbar li{ 
+      navbar안에 있는 li 
+   .navbar>li{} 
+   > 는 안에있는 직계자식 
+   스페이스바는 모든자식
+
+   그래서 뭐
+   .content div>div>p>span
+   이런식으로 짤수있는데 이런거는 좋지 않은거임. 그냥 클래스만들어서 짜는거 추천. 여기에는 span 주고 싶으면 p에 클래스 만들어서 할것.
