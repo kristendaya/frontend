@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useCallback, useState } from "react";
 import Input from "../components/Input";
 
@@ -14,6 +15,19 @@ const Auth = () => {
     },[])
     //in that case toggle it to register otherwise I can leave it at login
     //****** Make usre add the dependency array at the bottom!!!!!! 이거 나중에 다시 확인하기!! */
+
+    const register = useCallback(async () => {
+        try{
+            await axios.post('api/register', {
+                email,
+                name,
+                password
+            });
+        } catch(error){
+            console.log(error);
+        }
+    }, []);
+
 
     return( 
         // <div style={{ backgroundImage: url(${/images/hero.jpg}) }} 
