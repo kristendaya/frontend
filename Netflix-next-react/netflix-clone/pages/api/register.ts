@@ -22,6 +22,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
  
       const hashedPasswrd = await bcrypt.hash(password,12);
 
+      const user = await 
+
    }catch(error){
       console.log(error);
       return res.status(400).end();

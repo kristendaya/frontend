@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>>Document</title>
+      <link href="main.css" rel="stylesheet">
+      </head>
+      <body> 
+            <div class = "alert-box" id = "alert">
+               <p class="title1">알림창임</p>
+               <!-- <button class="title1" onclick = "알림창열기('none');"> 닫기</button> -->
+               <button id="close"> 닫기</button>
+                 </div>
+               
+               <button onclick = "아이디비번알림창 ('아이디입력하세요')">버튼1</button>
+               <button onclick = "아이디비번알림창 ('비밀번호입력하세요')">버튼2</button>
+
+            <script>
+
+               document.getElementById('close').addEventListener('click', function(){
+                  document.getElementById('alert').style.display= 'none';
+               })
+
+               function 알림창열기(구멍) {
+                  document.getElementById('alert').style.display= 구멍;
+               }
+               //addEventlisener()쓰면 이제 onclick 이런식으로 안써도 됨. 
+               //파라미터 2개를 잘 입력하면됨. 
+               //이벤트명 (키입력->'keydown', 'scroll','click','mouseover') 종류는 몇십개있음.
+               //파라미터 자리에 들어가는 함수를 콜백함수라고 한다. 뭔가 순차적으로 실행하고싶을때 하는게 콜백함수야!!!!! 
+
+                  function 아이디비번알림창 (a){
+                     document.getElementsByClassName('title1')[0].innerHTML= a;
+                     document.getElementById('alert').style.display= 'block';
+                  }
+
+ //Id로 만 찾는게아니라 class로도 찾는게 가능함.
+ //id는 중복을 허용하지 않지만 class는 중복이 가능함. 그렇기에 인덱싱을 해줘야함. title1[0]이렇게. 찾은것중 위에서 몇번째.
+                  
+                 
+
+            </script>
+               </body>
+

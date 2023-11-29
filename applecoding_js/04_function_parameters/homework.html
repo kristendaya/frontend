@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>>Document</title>
+      <link href="main.css" rel="stylesheet">
+      </head>
+      <body> 
+            <div class = "alert-box" id = "alert">
+               <p id="title">알림창임</p>
+               <button onclick = "AlertBox('none');"> 닫기</button>
+                 </div>
+               
+               <button onclick = "아이디비번알림창 ('아이디입력하세요')">버튼1</button>
+               <button onclick = "아이디비번알림창 ('비밀번호입력하세요')">버튼2</button>
+
+            <script>
+                  function 아이디비번알림창 (a){
+                     document.getElementById('title').innerHTML= a;
+                     document.getElementById('alert').style.display= 'block';
+                  }
+
+                  function AlertBox(condition) {
+                     document.getElementById('alert').style.display= condition;
+                  }
+               
+
+            </script>
+               </body>
+
+
+<!-- 버튼을 눌렀을때 아이디를 입력하세요 만들고 두번재버튼 누르면 비번을 입력하세요 만들기  -->
+               <!--        <button onclick = "1. 제목을 바꿈 2.띄움">버튼1</button> 이런식으로 순서를 써가면서 코드를 짜는거임 -->
+               <!--        <button onclick = "1.p태그 내용을 아이디입력으로 바꾼다.2.띄움">버튼1</button> -->
+<!-- 1.html 내용을 바꿀거면 innerhtml 넣고, p를 보내 id가 없음. 그러면 id를 만들어주면됨. -->
+<!-- 그래서 1.p태그 내용바꾸기 ->  document.getElementById('title').innerHTML= "아이디를 입력하셈"; -->
+<!-- 2.띄움 :document.getElementById('alert').style.display= 'block';  -->
+<!-- 너무 기니까 함수로 바꿔  -->
