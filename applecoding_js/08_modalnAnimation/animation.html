@@ -1,0 +1,69 @@
+<!doctype html>
+<htmlb lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="animation.css" rel="stylesheet"
+  </head>
+  <body>
+   <div class="black-bg">
+      <div class="white-bg">
+        <h4>로그인하세요</h4>
+        <button class="btn btn-danger" id="close">닫기</button>
+      </div>
+    </div> 
+
+<!-- one-way ui애니메이션 만드는법 -->
+<!-- a상태->b상태로 이동하는것.  -->
+<!-- 1.시작스타일 2.최종스타일로 css를 만들어놓으셈. 3.원할때 최종스타일로 변하라고 코드짬 4.transition추가  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand">Navbar</span>
+        <button  class="navbar-toggler " type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+<!-- 서브메뉴 접히는 애니메이션은 height와 overflow:hidden조절하면됨. -->
+
+
+    <ul class="list-group">
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">And a fifth one</li>
+    </ul>
+    <!-- jquery 홈페이지에서 minified 눌러서 소스 긁어서 이렇게 붙여넣기함. --> 
+    <!-- 거의 모든 자바스크립트 라이브러리는 <body>끝나기전에 넣는걸 권장한다.페이지로드 성능상!  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- 이렇게 복붙해놓은거 하단에서 제이쿼리 작성하면됨. -->
+ 
+   <button id="login">로그인</button>
+   
+    <script>
+      //로그인버튼 누르면 모달창 띄어주셈~ 
+      //show-mdal클래스를 저기 붙여주셈이 되야함.
+      //저기가 어딘데? black-bg. 
+      $('#login').on('click',function(){
+         $('.black-bg').addClass('show-modal');
+      });
+// UI에 애니메이션 추가하려면 -> fadein 같은거 하면됨 .그런데 이런게 성능저하를 일으킴 
+//그래서 가능한 CSS로 처리하는게 좋음
+      $('.navbar-toggler').on('click', function(){
+        $('.list-group').addClass('show-sub');
+      })
+
+      $('#close').on('click', function(){
+         $('.black-bg').hide()
+      })
+
+    </script>
+
+   </body>
+</htmlb
