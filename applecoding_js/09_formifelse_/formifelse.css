@@ -9,6 +9,10 @@
    opacity:0;
    transition: all 1s;
  }
+.main-bg{
+  padding: 100px 20px;
+  background : lightgrey;
+}
 
 
  .white-bg {

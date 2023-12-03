@@ -11,9 +11,33 @@
    <div class="black-bg">
       <div class="white-bg">
         <h4>로그인하세요</h4>
-        <button class="btn btn-danger" id="close">닫기</button>
+
+        <form action="success.html">
+          <div class="my-3">
+            <input type="text" class="form-control"> 
+           </div>
+           <div class="my-3">
+             <input type="password" class="form-control">
+           </div>
+           <button type="submit" class="c">전송</button>
+           <button type="button" class="btn btn-danger" id="close">닫기</button>
+        </form> 
+        <!-- 일반버튼은 버튼 / 그리고 전송은 항상 submit -->
+        <!-- 뭔가를 만들어야겠다 ~ 그러면 Script 만들면 되는거잖아!  -->
+
       </div>
     </div> 
+
+    <script>
+      //전송버튼 누르면 -> eventlistner 저기 Input에 입력한 값이 공백이면 -> 조건문 / 알림창 띄워주세요. ->모달창
+      //알림창 띄우기 -> alert('안녕하세요') -> 브라우저 기본 기능같은거임.
+      $('#.submit').on('click',function(){
+        if($("#userInput").val().trim()==""){
+
+      })
+
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
    
@@ -44,9 +68,9 @@
    
     <script>
 
-     // $('#login').on('click',function(){
-       //  $('.black-bg').addClass('show-modal');
-      //});
+      $('#login').on('click',function(){
+         $('.black-bg').addClass('show-modal');
+      });
 
       $('.navbar-toggler').on('click', function(){
         $('.list-group').addClass('show-sub');
