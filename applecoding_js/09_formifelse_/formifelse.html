@@ -11,7 +11,8 @@
    <div class="black-bg">
       <div class="white-bg">
         <h4>로그인하세요</h4>
-
+<!-- the reason to use form is to send user's information to server -->
+<!-- then we should use action -->
         <form action="success.html">
           <div class="my-3">
             <input type="text" class="form-control"> 
@@ -19,12 +20,12 @@
            <div class="my-3">
              <input type="password" class="form-control">
            </div>
-           <button type="submit" class="c">전송</button>
+           <button type="submit" class="btn btn-primary">전송</button>
            <button type="button" class="btn btn-danger" id="close">닫기</button>
         </form> 
         <!-- 일반버튼은 버튼 / 그리고 전송은 항상 submit -->
         <!-- 뭔가를 만들어야겠다 ~ 그러면 Script 만들면 되는거잖아!  -->
-
+        
       </div>
     </div> 
 
@@ -32,9 +33,11 @@
       //전송버튼 누르면 -> eventlistner 저기 Input에 입력한 값이 공백이면 -> 조건문 / 알림창 띄워주세요. ->모달창
       //알림창 띄우기 -> alert('안녕하세요') -> 브라우저 기본 기능같은거임.
       $('#.submit').on('click',function(){
-        if($("#userInput").val().trim()==""){
-
-      })
+        if($("#userInput").val().trim()==""){alert("내용을입력하세요");
+        return false;
+      }
+        return true;
+    }
 
 
     </script>
