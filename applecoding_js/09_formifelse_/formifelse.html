@@ -15,12 +15,12 @@
 <!-- then we should use action -->
         <form action="success.html">
           <div class="my-3">
-            <input type="text" class="form-control"> 
+            <input type="text" class="form-control" id="email"> 
            </div>
            <div class="my-3">
              <input type="password" class="form-control">
            </div>
-           <button type="submit" class="btn btn-primary">전송</button>
+           <button type="submit" class="btn btn-primary" id = "send">전송</button>
            <button type="button" class="btn btn-danger" id="close">닫기</button>
         </form> 
         <!-- 일반버튼은 버튼 / 그리고 전송은 항상 submit -->
@@ -30,15 +30,27 @@
     </div> 
 
     <script>
+      //유저가 입력한값
+
+      $('form').on('submit', function(){
+        //저기 input에 입력한값이 공백이면 알림창 띄워주세요.
+        if (document.getElementById('email').value == ''){
+          alert('아이디입력안했음요')
+        }
+      });
+        
+      //if (3>1){
+        //console.log('안녕')
+      //}s
       //전송버튼 누르면 -> eventlistner 저기 Input에 입력한 값이 공백이면 -> 조건문 / 알림창 띄워주세요. ->모달창
       //알림창 띄우기 -> alert('안녕하세요') -> 브라우저 기본 기능같은거임.
-      $('#.submit').on('click',function(){
-        if($("#userInput").val().trim()==""){alert("내용을입력하세요");
-        return false;
-      }
-        return true;
-    }
-
+      //$('#.submit').on('click',function(){
+       // if($("#userInput").val().trim()==""){alert("내용을입력하세요");
+        //return false;
+     // }
+      //  return true;
+    //}
+        // 1.먼저 아이디를 부여헀음 (나는 그냥 .submit )
 
     </script>
 
