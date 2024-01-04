@@ -1,0 +1,39 @@
+.black-bg {
+   width : 100%;
+   height : 100%;
+   position : fixed;
+   background : rgba(0,0,0,0.5);
+   z-index : 5;
+   padding: 30px;
+   visibility: hidden;
+   opacity:0;
+   transition: all 1s;
+ }
+.main-bg{
+  padding: 100px 20px;
+  background : lightgrey;
+}
+
+
+ .white-bg {
+   background: white;
+   border-radius: 5px;
+   padding: 30px;
+ } 
+
+ .show-modal{
+   visibility: visible;
+   opacity: 1;
+  }
+
+.list-group{
+  visibility: hidden;
+  transition: all 1s;
+  overflow: hidden;
+  height: 0px;
+}
+
+.show-sub{
+  visibility: visible;
+  height: 200px;
+}
