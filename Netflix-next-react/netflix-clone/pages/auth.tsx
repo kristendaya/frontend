@@ -26,7 +26,7 @@ const Auth = () => {
         } catch(error){
             console.log(error);
         }
-    }, []);
+    }, [email, name, password]);
 
 
     return( 
