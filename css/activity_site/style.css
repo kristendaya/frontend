@@ -1,0 +1,89 @@
+body {
+   font-family: 'Noto Sans KR', sans-serif;
+   margin: 0 0 140px;
+ }
+ 
+ .header {
+   background-color: #f3f3f3;
+   margin-bottom: 32px;
+   padding: 64px 0px 32px;
+ }
+ 
+ .header-container {
+   margin: 0 auto;
+   width: 600px;
+ }
+ 
+ .header-title {
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 46px;
+   margin: 8px 0;
+ }
+ 
+ .header-description {
+   color: #a6a6a6;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 23px;
+   margin: 8px 0;
+ }
+ 
+ #desert {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+     url('./activity-desert.png');
+ }
+ 
+ #paragliding {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+     url('./activity-paragliding.png');
+ }
+ 
+ #ducks {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+     url('./activity-duck.png');
+     opacity: 0.5
+ }
+ 
+ #versailles {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+     url('./activity-versailles.png');
+ }
+ 
+ .activity {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.2);
+   /* 우선 가로 세로의 값이 각각 0px, 4px이니까, box-shadow: 0px 4px로 써주면 됩니다. 
+   여기다 블러 값 28px을 추가하면 box-shadow: 0px 4px 28px이 되고요. 마지막으로 그림자 색상을 추가 */
+
+   color: #ffffff;
+   height: 185px;
+   margin: 24px auto;
+   padding: 40px;
+   width: 520px;
+ }
+ 
+ .activity-title {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 29px;
+   margin: 0;
+ }
+ 
+ .activity-date {
+   font-size: 12px;
+   font-weight: 400;
+   margin: 8px 0;
+ }
+ 
+ .activity-join {
+   background: rgba(0, 0, 0, 0.15);
+   display: inline-block;
+   font-size: 12px;
+   font-weight: 700;
+   margin: 22px 0;
+   padding: 8px 24px;
+ }
+ 

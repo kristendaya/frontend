@@ -1,0 +1,70 @@
+/* boxshadow 홈페이지에서 미리 확인하고 코드 짤수도 있음 */
+
+body {
+   background-color: #3c3a4a;
+   font-family: 'Noto Sans KR', sans-serif;
+   padding: 32px;
+ }
+ 
+ .container {
+   background-image:  linear-gradient(rgba(159, 84, 209, 0.2), rgba(115, 82, 208, 0.6)),
+   url('bg.png');
+   background-repeat: no-repeat;
+   width: 400px;
+   background-color: #7352d0;
+   color: #ffffff;
+   margin: 0 auto;
+ }
+ 
+ .thumb {
+   height: 226px;
+ }
+ 
+ .progress {
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+ 
+ .progress-value {
+   background-color: #5f23e0;
+   width: 20%;
+   height: 4px;
+ }
+ 
+ .player {
+   background-color: rgba(0, 0, 0, 0.4);
+   padding: 14px 24px;
+   font-size: 16px;
+   line-height: 23px;
+ }
+ 
+ .player-icon {
+   height: 13px;
+   margin-right: 24px;
+ }
+ 
+ .player-title {
+   font-weight: 500;
+   margin-right: 16px;
+ }
+ 
+ .player-artist {
+   color: rgba(255, 255, 255, 0.5);
+ }
+ 
+ .song {
+   width: 352px;
+   margin: 8px auto;
+   background-color: #434153;
+   padding: 16px 24px;
+ }
+ 
+ .song-title {
+   font-size: 16px;
+   line-height: 23px;
+   color: rgba(255, 255, 255, 0.6);
+ }
+ 
+ .song-artist {
+   color: rgba(255, 255, 255, 0.2);
+   font-size: 12px;
+ }
