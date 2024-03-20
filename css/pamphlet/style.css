@@ -1,0 +1,39 @@
+/* 개인적으로 가로 스크롤 안하는게 더 이쁜거같음... */
+
+html {
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size: 16px;
+ }
+ 
+ body {
+   padding: 24px 40px;
+ }
+ 
+ .title {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 35px;
+ }
+ 
+ .section {
+   margin: 24px 0;
+ }
+ 
+ .date {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 23px;
+   margin: 8px 0;
+ }
+ 
+ .artworks {
+   margin: 0 -48px;
+   white-space: nowrap;
+   overflow:scroll;
+}
+ 
+ .artwork {
+   height: 194px;
+   margin-right: 8px;
+ }
+ 
