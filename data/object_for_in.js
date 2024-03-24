@@ -24,6 +24,6 @@ function passChecker(scoreObject) {
    else { console.log("아쉽지만 불합격입니다..")}
    }
 
-
+ 
 passChecker(hyesoonScore);
 passChecker(minsoonScore);
