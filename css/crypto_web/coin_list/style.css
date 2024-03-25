@@ -1,0 +1,29 @@
+body {
+   font-family: Poppins, 'Noto Sans KR', sans-serif;
+   margin: 40px;
+   font-size: 16px;
+   line-height: 27px;
+   color: #4c497b;
+ }
+ 
+ .title {
+   color: #161346;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 54px;
+ }
+ 
+ .coin-list > div {
+   padding: 8px 0;
+ }
+ 
+ .coin-list > div img{
+   width: 16px;
+   margin-right: 8px;
+ }
+ 
+ .coin-list > div span{
+   font-size: 12px;
+   color: #8287A4;
+ }
+ 
