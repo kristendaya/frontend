@@ -1,0 +1,93 @@
+/** {*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+body {
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size: 16px;
+   margin: 0;
+ }
+ 
+ .header{
+   border-bottom: 1px solid #000000;
+   font-size: 52px;
+   font-weight: 800;
+   margin: 0;
+ }
+ 
+ #logo {
+   display: block;
+   width: 104px;
+   margin-bottom: 24px;
+ }
+ 
+ .nav {
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 32px;
+ }
+ 
+ .nav-menu {
+   color: #000000;
+   margin-right: 16px;
+   text-decoration: none;
+ }
+ 
+ .header {
+   padding-bottom: 24px;
+   padding-top: 68px;
+ }
+ 
+ .header,
+ .content {
+   padding-left: 48px;
+   padding-right: 48px;
+ }
+ 
+ .section {
+   margin: 40px 0 72px;
+ }
+ 
+ .title {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 35px;
+   margin: 8px 0;
+ }
+ 
+ .date {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 23px;
+   margin: 8px 0;
+ }
+ 
+ .artworks {
+   margin: 24px -48px;
+   overflow: scroll;
+   white-space: nowrap;
+ }
+ 
+ .artwork {
+   height: 194px;
+   margin-right: 8px;
+ }
+ 
+ a.button {
+   display: inline-block;
+   background: #000000;
+   color: #ffffff;
+   padding: 12px 24px;
+   text-decoration: none;
+ }
+ 
+ .description {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 23px;
+   margin: 16px 0;
+ }
+ 
+ .full{
+   height: 400px;
+ }

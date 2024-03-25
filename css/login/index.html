@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>로그인</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>로그인</h1>
+      <label>아이디</label>
+<!-- 인풋 태그에는 값을 입력하지 않았을 때 기본적으로 보여주는 메시지가 있습니다.
+    이런 걸 placeholder 라고 하는데요.
+    placeholder라는 속성으로 추가합니다. -->
+<!-- 이때 placeholder 의 디자인을 바꾸려면 CSS 선택자로 아래처럼 ::placeholder 를 활용하면 됩니다. -->
+      <input
+        name="username"
+        type="text"
+        placeholder="Email 또는 전화번호"
+      />
+      <label>비밀번호</label>
+      <input
+        name="password"
+        type="password"
+        placeholder="비밀번호"
+      />
+      <div>
+        <a href="#">비밀번호를 잊으셨나요?</a>
+      </div>
+      <button>로그인</button>
+      <div>
+        회원이 아니신가요?
+        <a href="#">가입하기</a>
+      </div>
+    </form>
+  </body>
+</html>
