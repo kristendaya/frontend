@@ -1,0 +1,153 @@
+/* 내가 짠거랑 순서 비교해보기 */
+
+* {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: "Noto Sans KR", sans-serif;
+   margin: 0;
+ }
+ 
+ .header {
+   background-image: url("bg.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #ffffff;
+ }
+ 
+ .header-title {
+   font-family: Poppins;
+   font-size: 20px;
+   line-height: 30px;
+   padding: 12px 40px;
+ }
+ 
+ .header-title-accent {
+   font-weight: 700;
+ }
+ 
+ .header-tagline-small {
+   color: #8287a4;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 29px;
+   margin: 12px 0;
+ }
+ 
+ .header-tagline {
+   color: #ffffff;
+   font-family: Poppins;
+   font-size: 56px;
+   font-weight: 700;
+   line-height: 74px;
+   margin: 0;
+ }
+ 
+ .header-description {
+   color: #8287a4;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 27px;
+   margin: 14px 0;
+ }
+ 
+ .header-content {
+   margin: 0 auto;
+   padding: 80px 0 280px;
+   width: 720px;
+ }
+ 
+ .section {
+   padding: 32px 0;
+ }
+ 
+ .section.dark {
+   background-color: #f1f4fa;
+ }
+ 
+ .container {
+   margin: 0 auto;
+   width: 720px;
+ }
+ 
+ .title {
+   color: #161346;
+   font-family: Poppins;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 54px;
+   margin-bottom: 42px;
+   margin-top: 42px;
+ }
+ 
+ .description {
+   color: #4c497b;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 27px;
+   margin: 32px 0;
+ }
+ 
+ .cover {
+   border-radius: 24px;
+   width: 100%;
+ }
+ 
+ #career.section {
+   background-color: #161346;
+   color: #ffffff;
+   text-align: center;
+ }
+ 
+ #footer.section {
+   background-color: #120f3f;
+   color: #d9d9d9;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20px;
+ }
+ 
+ #career .title {
+   color: #ffffff;
+   font-size: 32px;
+   font-weight: 500;
+   line-height: 48px;
+   margin: 8px 0;
+ }
+ 
+ #career .description {
+   color: #8287a4;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 23px;
+   margin: 8px 0;
+ }
+ 
+ .button-container {
+   text-align: center;
+ }
+ 
+ a.button {
+   background: #413c91;
+   border-radius: 8px;
+   color: #ffffff;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 23px;
+   margin: 32px 0;
+   padding: 16px 32px;
+   text-align: center;
+   text-decoration: none;
+ }
+ 
+ a.button:hover {
+   background-color: #504ba8;
+ }
+ 
+ a.button.round {
+   border-radius: 9999px;
+ }
+ 
