@@ -1,0 +1,143 @@
+body {
+  background: #f8f8f8;
+  color: #0b1f66;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.header {
+  background: #11172b;
+  color: #ffffff;
+  font-family: 'Titillium Web';
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 37px;
+  padding: 12px;
+}
+
+#logo {
+  height: 24px;
+  margin-right: 13px;
+}
+
+.logo-accent {
+  font-weight: 600;
+}
+
+.header > .divider {
+  color: #3b4252;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px dashed #b6bfd3;
+  margin: 24px 0;
+}
+
+.trip {
+  background: #ebeff8;
+  border-radius: 8px;
+  margin: 40px 0 24px;
+  padding: 24px 32px;
+}
+
+.trip-title {
+  color: #b3bdd5;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.trip-depart-icon {
+  height: 12px;
+  margin-right: 8px;
+}
+
+.trip-airports {
+  color: #000000;
+  font-family: 'Titillium Web';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 8px 0;
+}
+
+.trip-date {
+  background: #ffffff;
+  border-radius: 4px;
+  color: #000000;
+  display: inline-block;
+  margin: 16px 0;
+  padding: 8px 24px;
+}
+
+.trip-detail {
+  color: #b3bdd5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.flight-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(18, 23, 42, 0.03);
+  margin: 24px 0;
+}
+
+.flight-card h2 {
+  border-bottom: 1px solid #dbf1ec;
+  color: #16bf97;
+  font-family: 'Titillium Web';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 8px 24px;
+}
+
+.flight-card .content {
+  padding: 16px 24px 24px;
+}
+
+.flight-card h3 {
+  color: #b6bfd3;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  margin: 4px 0;
+}
+
+.flight-card .flight-departure-arrival {
+  color: #1a345e;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.flight-card .flight-departure-arrival .flight-icon {
+  height: 16px;
+  margin: 0 10px;
+}
+
+.flight-card .footer {
+  text-align: right;
+}
+
+.flight-card .footer > a {
+  color: #1a345e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.flight-card .footer > a.soldout {
+  color: #dce0e8;
+}
