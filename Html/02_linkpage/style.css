@@ -1,0 +1,51 @@
+html {
+   font-family: 'Noto Sans KR', sans-serif;
+ }
+ 
+ body {
+   min-height: 100vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-color: #4158d0;
+   background-image: linear-gradient(
+     43deg,
+     #4158d0 0%,
+     #c850c0 46%,
+     #ffcc70 100%
+   );
+   color: #ffffff;
+ }
+ 
+ .container {
+   text-align: center;
+   margin: 32px auto;
+   width: 420px;
+ }
+ 
+ .profile {
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   object-fit: cover;
+ }
+ 
+ .fullname {
+   font-size: 24px;
+   font-weight: 500;
+ }
+ 
+ .item {
+   display: block;
+   border: 2px solid #ffffff;
+   padding: 16px;
+   margin: 16px;
+   border-radius: 9999px;
+   color: #ffffff;
+   text-decoration: none;
+ }
+ 
+ .item:hover {
+   background-color: #ffffff;
+   color: #000000;
+ }
+ 
