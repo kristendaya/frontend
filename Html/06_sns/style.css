@@ -1,0 +1,39 @@
+html {
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size: 16px;
+ }
+ 
+ body {
+   margin: 32px;
+ }
+ 
+ a {
+   color: #00376b;
+   font-weight: 700;
+   text-decoration: none;
+ }
+ 
+ .bio {
+   width: 480px;
+   margin: 0 auto;
+   border-bottom: 2px solid #dbdbdb;
+ }
+ 
+ .profile {
+   width: 120px;
+   border-radius: 50%;
+   margin-bottom: 16px;
+ }
+ 
+ .username {
+   font-weight: 700;
+ }
+ 
+ .profession {
+   color: #8e8e8e;
+ }
+ 
+ .feeds {
+   width: 480px;
+   margin: 16px auto;
+ }
